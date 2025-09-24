@@ -5,7 +5,7 @@ import { PlayersController } from './controllers/PlayersController.js';
 class App {
 
   ExampleController = new ExampleController() // ☑️ you can remove this - example only
-  PlayersController = new PlayersController()
+  playersController = new PlayersController()
 }
 
 window['app'] = new App()
