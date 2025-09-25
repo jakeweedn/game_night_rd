@@ -15,7 +15,9 @@ class ObservableAppState extends EventEmitter {
 
     new Player("Sally"),
 
-    new Player("Sue")
+    new Player("Sue"),
+
+    new Player("Billy")
   ]
 }
 

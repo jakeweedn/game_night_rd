@@ -1,14 +1,15 @@
 import { AppState } from "../AppState.js"
+import { playersService } from "../services/PlayersService.js"
 
 
 export class PlayersController {
 
     constructor() {
-        console.log('🧙🎮')
+        console.log('🧙🎮 text')
         this.drawPlayers()
-        this.scorePoint()
-    }
 
+
+    }
     drawPlayers() {
         const players = AppState.players
         console.log('✏️', players);
@@ -24,7 +25,14 @@ export class PlayersController {
 
     scorePoint(playerName) {
         console.log('clicked', playerName);
+        playersService.scorePoint(playerName)
+
+        this.drawPlayers()
+
     }
+
+
+
 
 
 }
